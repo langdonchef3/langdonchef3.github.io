@@ -420,25 +420,49 @@
 <script>
 
   $(document).ready(function() {
-  
-    $('#calendar').fullCalendar({
-      header: {
-        left: 'prev,next today',
-        center: 'title',
-        right: 'month,agendaWeek,agendaDay'
-      },
-      editable: false,
-      eventLimit: true, // allow "more" link when too many events
-      events: {
-        url: 'php/get-events.php',
-        error: function() {
-          $('#script-warning').show();
+	$('#calendar').fullCalendar({
+	   resources: [
+	        {
+	            id: 'a',
+	            title: 'Room A',
+			    color: "#ce1710",
+			    textColor: "white",
+	        },
+	        {
+	            id: 'b',
+	            title: 'Room B',
+			    color: "#ce1710",
+			    textColor: "white",
+	        }
+	    ],
+	    events: [
+        {
+            id: '1',
+            resourceId: 'a',
+            title: 'Meeting',
+            start: '2016-08-14',
+            end: '2016-08-24'
         }
-      },
-      loading: function(bool) {
-        $('#loading').toggle(bool);
-      }
-    });
+    ]
+	});
+    // $('#calendar').fullCalendar({
+    //   header: {
+    //     left: 'prev,next today',
+    //     center: 'title',
+    //     right: 'month,agendaWeek,agendaDay'
+    //   },
+    //   editable: false,
+    //   eventLimit: true, // allow "more" link when too many events
+    //   events: {
+    //     url: 'php/get-events.php',
+    //     error: function() {
+    //       $('#script-warning').show();
+    //     }
+    //   },
+    //   loading: function(bool) {
+    //     $('#loading').toggle(bool);
+    //   }
+    // });
     
   });
 
