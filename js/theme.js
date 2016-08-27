@@ -1,7 +1,6 @@
 /* Copyright (C) arrowthemes, http://www.gnu.org/licenses/gpl.html GNU/GPL */
 
 jQuery(function($) {
-
     "use strict";
 
     var config = $('html').data('config') || {},

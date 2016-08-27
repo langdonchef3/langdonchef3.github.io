@@ -4,3 +4,42 @@
    Use this file to add custom CSS easily
    ========================================================================== */
 
+/* Global */
+
+::selection {
+  background: #fff298;
+  color: rgba(56, 47, 47, 0.5);
+  text-shadow: none;
+}
+
+/* tm-toolbar */
+
+
+.tm-toolbar {
+	background-color: #a72e2a;
+}
+
+.tm-toolbar p{
+	color: #fff298;
+}
+
+.tm-toolbar a, .tm-toolbar .uk-subnav > li > a {
+	color: #fff298;
+}
+
+.tm-navbar .uk-navbar-nav > li.uk-active > a:before {
+    border-bottom: 1px solid #fff298;
+}
+
+.tm-navbar .uk-navbar-nav > li > a:before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    border-bottom: 1px solid #fff298;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    -webkit-transition: all cubic-bezier(0.62, 0.28, 0.23, 0.99) 250ms;
+    transition: all cubic-bezier(0.62, 0.28, 0.23, 0.99) 250ms;
+}
+
