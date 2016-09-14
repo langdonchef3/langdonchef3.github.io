@@ -12,6 +12,13 @@
   text-shadow: none;
 }
 
+/* tm-nav-logo */
+.tm-nav-logo-small {
+	position: relative;
+	top: 1.2em;
+}
+
+
 /* tm-toolbar */
 
 
