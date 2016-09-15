@@ -12,6 +12,13 @@
   text-shadow: none;
 }
 
+a, .uk-link {
+    color: #fff298;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
 /* tm-nav-logo */
 .tm-nav-logo-small {
 	position: relative;
@@ -50,3 +57,90 @@
     transition: all cubic-bezier(0.62, 0.28, 0.23, 0.99) 250ms;
 }
 
+
+.tm-slideshow-gaucho .uk-slidenav {
+    top: 40%;
+    bottom: 0;
+    font-size: 30px;
+    display: inline-block;
+    background-color: #a72e2a;
+    width: 40px;
+    height: 80px;
+    line-height: 75px;
+    z-index: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.05), inset 1px 0 0 rgba(255, 255, 255, 0.1);
+}
+
+
+.tm-slideshow-gaucho .uk-slidenav-next:hover, .tm-slideshow-gaucho .uk-slidenav-previous:hover {
+    background-color: #a72e2a;
+}
+
+
+.tm-slideshow-gaucho .uk-slidenav-next:before {
+    content: "\f105";
+   	font-family: FontAwesome;
+    color: #fff298;
+}
+
+.tm-slideshow-gaucho .uk-slidenav-previous:before {
+    content: "\f104";
+    font-family: FontAwesome;
+   color: #fff298;
+}
+
+.tm-slideshow-gaucho .uk-dotnav > .uk-active > * {
+    box-shadow: 0 0 0 4px #fff298;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.tm-slideshow-default .uk-dotnav > .uk-active > * {
+    box-shadow: 0 0 0 3px #a72e2a;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.uk-tab > li > a:hover, .uk-tab > li > a:focus, .uk-tab > li.uk-open > a {
+    border-color: rgba(0, 0, 0, 0.1);
+    background: #fff298;
+    color: #a72e2a;
+    outline: none;
+}
+
+.tm-slideshow-gaucho .uk-dotnav li a {
+    box-shadow: 0 0 0 4px #a72e2a;
+    border-radius: 3px;
+    background: #ffffff;
+    width: 10px;
+    height: 10px;
+    text-indent: -999em;
+    padding: 1px;
+}
+
+.uk-tab-grid:before {
+    display: block;
+    position: absolute;
+    left: 5px;
+    right: 0;
+    bottom: -1px;
+    border-top: 1px solid #a72e2a;
+    z-index: -1;
+}
+
+a, .uk-link {
+    color: #a72e2a;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.uk-tab > li.uk-active > a {
+    border-color: rgba(0, 0, 0, 0.1);
+    border-bottom-color: transparent;
+    background: #a72e2a;
+    color: #ffffff;
+}
+
+
+.tm-navigation-bar .uk-dotnav > li.uk-active > a {
+    background-color: #fff298;
+}
