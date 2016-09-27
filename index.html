@@ -57,42 +57,85 @@
 
   <!-- main bar -->
   <div class="tm-navbar" data-uk-sticky>
-    <nav class="tm-navbar-container uk-flex">
+  	<nav class="tm-navbar-container uk-flex">
 
-      <!-- small logo -->
-      <div class="tm-nav-logo-small">
-        <a class="tm-logo-small" href="index.html">
-          <img src="images/general/19bella-logo-small.svg" width="170" height="45" alt="19Bella">
-        </a>
-      </div>
+  		<!-- small logo -->
+  		<div class="tm-nav-logo-small">
+  			<a class="tm-logo-small" href="index.html">
+  				<img src="images/general/19bella-logo-small.svg" width="170" height="45" alt="19Bella">
+  			</a>
+  		</div>
 
-      <!-- main menu -->
-      <div class="tm-nav uk-hidden-small">
-        <ul class="uk-navbar-nav uk-hidden-small">
+  		<!-- main menu -->
+  		<div class="tm-nav uk-hidden-small">
+  			<ul class="uk-navbar-nav uk-hidden-small">
 
-          <!-- about us -->
-          <li class="uk-parent" data-uk-dropdown>
-          	<a href="about-us.html">About Us</a>
-          </li>
+  				<!-- about us -->
+  				<li class="uk-parent" data-uk-dropdown>
+  					<a href="about-us.html">About Us</a>
+  					<div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1 uk-dropdown-bottom" style="top: 70px; left: 0px;">
+  						<div class="uk-grid uk-dropdown-grid">
+  							<div class="uk-width-1-1">
+  								<ul class="uk-nav uk-nav-navbar">
+  									<li><a href="our-staff.html">Our Staff</a></li>
+  								</ul>
+  							</div>
+  						</div>
+  					</div>
+  				</li>
 
-          <!-- menu menu  -->
-          <li class="uk-parent" data-uk-dropdown>
-          	<a href="menu.html"><i class="uk-icon-cutlery"></i>Menu</a>
-          </li>
+  				<!-- menu menu  -->
+  				<li class="uk-parent" data-uk-dropdown>
+  					<a href="menu.html"><!-- <i class="uk-icon-cutlery"></i> -->Menu</a>
+  					<div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1 uk-dropdown-bottom" style="top: 70px; left: 0px;">
+  						<div class="uk-grid uk-dropdown-grid">
+  							<div class="uk-width-1-1">
+  								<ul class="uk-nav uk-nav-navbar">
+  									<li><a href="menu.html">Dinner</a></li><!-- No anchor cause at top -->
+  									<li><a href="menu.html#brunch">Sunday Brunch</a></li>
+  									<li><a href="menu.html#lunch">Lunch</a></li>
+  									<li><a href="menu.html#dessert">Dessert</a></li>
+  								</ul>
+  							</div>
+  						</div>
+  					</div>
+  				</li>
 
-          <!-- parties and catering menu -->
-          <li class="uk-parent" data-uk-dropdown>
-          	<a href="parties-and-catering.html">Parties and Catering</a>
-          </li>
+  				<!-- menu menu  -->
+  				<li class="uk-parent" data-uk-dropdown>
+  					<a href="events.html"></i>Events</a>
+  				</li>
 
-          <!-- Contact us menu -->
-          <li><a href="contact-us.html">Contact Us</a></li>
-        </ul>
-      </div>
+  				<!-- parties and catering menu -->
+  				<li class="uk-parent" data-uk-dropdown>
+  					<a href="parties.html">Parties</a>
+  					<div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1 uk-dropdown-bottom" style="top: 70px; left: 0px;">
+  						<div class="uk-grid uk-dropdown-grid">
+  							<div class="uk-width-1-1">
+  								<ul class="uk-nav uk-nav-navbar">
+  									<li><a href="rooms.html">Rooms</a></li>
+  									<li><a href="catering.html">Catering</a></li>
+  								</ul>
+  							</div>
+  						</div>
+  					</div>
+  				</li>
 
-      <!-- offcanvas nav icon -->
-      <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
-    </nav>
+  				<!-- gallery menu  -->
+  				<li class="uk-parent" data-uk-dropdown>
+  					<a href="gallery.html"></i>Gallery</a>
+  				</li>
+
+
+  				<!-- Contact us menu -->
+  				<li><a href="contact-us.html">Contact Us</a></li>
+  			</ul>
+  		</div>
+
+  		<!-- offcanvas nav icon -->
+  		<a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
+
+  	</nav>
   </div>
 
   <!-- header a -->

@@ -26,6 +26,18 @@ a, .uk-link {
 }
 
 
+.tm-navbar .uk-navbar-nav > li .uk-dropdown-navbar {
+    padding: 0;
+    background-color: rgba(56, 47, 47, 0.5);
+}
+
+
+.uk-dropdown-navbar .uk-nav-navbar > li > a:hover, .uk-dropdown-navbar .uk-nav-navbar > li > a:focus {
+    color: #fff298;
+    background-color: #392110;
+    border-bottom: 2px solid #fff298;
+    padding-bottom: .35em;
+}
 /* tm-toolbar */
 
 

@@ -60,52 +60,91 @@
 
   <!-- main bar -->
   <div class="tm-navbar" data-uk-sticky>
-    <nav class="tm-navbar-container uk-flex">
+  	<nav class="tm-navbar-container uk-flex">
 
-      <!-- small logo -->
-      <div class="tm-nav-logo-small">
-        <a class="tm-logo-small" href="index.html">
-          <img src="images/general/19bella-logo-small.svg" width="170" height="45" alt="19Bella">
-        </a>
-      </div>
+  		<!-- small logo -->
+  		<div class="tm-nav-logo-small">
+  			<a class="tm-logo-small" href="index.html">
+  				<img src="images/general/19bella-logo-small.svg" width="170" height="45" alt="19Bella">
+  			</a>
+  		</div>
 
-      <!-- main menu -->
-      <div class="tm-nav uk-hidden-small">
-        <ul class="uk-navbar-nav uk-hidden-small">
+  		<!-- main menu -->
+  		<div class="tm-nav uk-hidden-small">
+  			<ul class="uk-navbar-nav uk-hidden-small">
 
-          <!-- home menu  -->
-          <li class="uk-parent" data-uk-dropdown>
-          	<a href="index.html">Home</a>
-          </li>
+  				<!-- about us -->
+  				<li class="uk-parent" data-uk-dropdown>
+  					<a href="about-us.html">About Us</a>
+  					<div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1 uk-dropdown-bottom" style="top: 70px; left: 0px;">
+  						<div class="uk-grid uk-dropdown-grid">
+  							<div class="uk-width-1-1">
+  								<ul class="uk-nav uk-nav-navbar">
+  									<li><a href="our-staff.html">Our Staff</a></li>
+  								</ul>
+  							</div>
+  						</div>
+  					</div>
+  				</li>
 
-          <!-- about us -->
-          <li class="uk-parent" data-uk-dropdown>
-          	<a href="about-us.html">About Us</a>
-          </li>
+  				<!-- menu menu  -->
+  				<li class="uk-parent uk-active" data-uk-dropdown>
+  					<a href="menu.html"><!-- <i class="uk-icon-cutlery"></i> -->Menu</a>
+  					<div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1 uk-dropdown-bottom" style="top: 70px; left: 0px;">
+  						<div class="uk-grid uk-dropdown-grid">
+  							<div class="uk-width-1-1">
+  								<ul class="uk-nav uk-nav-navbar">
+  									<li><a href="menu.html">Dinner</a></li><!-- No anchor cause at top -->
+  									<li><a href="menu.html#brunch">Sunday Brunch</a></li>
+  									<li><a href="menu.html#lunch">Lunch</a></li>
+  									<li><a href="menu.html#dessert">Dessert</a></li>
+  								</ul>
+  							</div>
+  						</div>
+  					</div>
+  				</li>
 
-          <!-- menu menu  -->
-          <li class="uk-parent uk-active" data-uk-dropdown>
-          	<a href="menu.html"><i class="uk-icon-cutlery"></i>Menu</a>
-          </li>
+  				<!-- menu menu  -->
+  				<li class="uk-parent" data-uk-dropdown>
+  					<a href="events.html"></i>Events</a>
+  				</li>
 
-          <!-- parties and catering menu -->
-          <li class="uk-parent" data-uk-dropdown>
-          	<a href="parties-and-catering.html">Parties and Catering</a>
-          </li>
+  				<!-- parties and catering menu -->
+  				<li class="uk-parent" data-uk-dropdown>
+  					<a href="parties.html">Parties</a>
+  					<div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1 uk-dropdown-bottom" style="top: 70px; left: 0px;">
+  						<div class="uk-grid uk-dropdown-grid">
+  							<div class="uk-width-1-1">
+  								<ul class="uk-nav uk-nav-navbar">
+  									<li><a href="rooms.html">Rooms</a></li>
+  									<li><a href="catering.html">Catering</a></li>
+  								</ul>
+  							</div>
+  						</div>
+  					</div>
+  				</li>
 
-          <!-- Contact us menu -->
-          <li><a href="contact-us.html">Contact Us</a></li>
-        </ul>
-      </div>
+  				<!-- gallery menu  -->
+  				<li class="uk-parent" data-uk-dropdown>
+  					<a href="gallery.html"></i>Gallery</a>
+  				</li>
 
-      <!-- offcanvas nav icon -->
-      <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
-    
-    </nav>
+
+  				<!-- Contact us menu -->
+  				<li><a href="contact-us.html">Contact Us</a></li>
+  			</ul>
+  		</div>
+
+  		<!-- offcanvas nav icon -->
+  		<a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
+
+  	</nav>
   </div>
 
 
+
 <!-- header-c -->
+<a name="dinner"></a>
 <div id="tm-header-c" class="tm-block-header-c uk-block uk-block-default tm-block-fullwidth tm-grid-collapse ">
 	<div class="uk-container uk-container-center">
 		<section class="tm-header-c uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}">
@@ -593,6 +632,7 @@
 		</div>
 
 		<!-- header-a -->
+		<a name="brunch"></a>
 		<div id="tm-header-a" class="tm-block-header-a uk-block uk-block-default tm-block-fullwidth tm-grid-collapse">
 			<div class="uk-container uk-container-center">
 				<section class="tm-header-a uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin>
@@ -621,96 +661,13 @@
 			<div class="uk-width-1-1">
 				<div class="uk-panel">
 					<ul class="uk-tab uk-tab-grid uk-tab-top" data-uk-tab="{connect:'#brunch-tabs', animation: 'fade'}">
-						<li class="uk-active"><a href="#">Starters</a></li>
-						<li><a href="#">Specials</a></li>
-						<li><a href="#">Eggs Benedict</a></li>
+						<li class="uk-active"><a href="#">Eggs Benedict</a></li>
 						<li><a href="#">Hashes</a></li>
 						<li><a href="#">Organic Eggs</a></li>
 						<li><a href="#">French Toast &amp; Pancakes</a></li>
 					</ul>
 
 					<ul id="brunch-tabs" class="uk-switcher uk-margin uk-tab-content">
-						<li>
-							<div class="uk-width-1-1">
-								<div class="uk-text-center">
-									<h3 class="uk-h3 uk-module-title-alt">Starters</h3>
-								</div>
-							</div>
-							<div class="uk-grid uk-grid-width-medium-1-2 uk-grid-width-large-1-3" data-uk-grid-margin>
-								<div class="uk-panel uk-panel-space">
-									<div class="tm-menu-item tm-menu-compound">
-										<h3 class="tm-menu-name">Sweet Melon</h3>
-										<span class="tm-menu-dots"></span>
-										<span class="tm-menu-price">$16</span>
-										<span class="tm-menu-desc">With Spanish Mangalica Ham, Grapes, Mustrada &amp; Pomegranate Molasses</span>
-									</div>
-									<div class="tm-menu-item tm-menu-compound">
-										<h3 class="tm-menu-name">Brazilian Lobster Cocktail</h3>
-
-										<span class="tm-menu-dots"></span>
-										<span class="tm-menu-price">$23</span>
-										<span class="tm-menu-desc">With Cocktail Sauce, Guacamole &amp; Corn Chips</span>
-									</div>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="uk-width-1-1">
-								<div class="uk-text-center">
-									<h3 class="uk-h3 uk-module-title-alt">Specials</h3>
-									<h6 class="uk-margin-top-remove uk-margin-large-bottom">served with Patas Bravas</h6>
-								</div>
-							</div>
-							<div class="uk-panel uk-panel-space">
-								<div class="uk-grid uk-grid-width-medium-1-2 uk-grid-width-large-1-3" data-uk-grid-margin>
-									<div class="tm-menu-item tm-menu-compound">
-										<h3 class="tm-menu-name">Grilled Lamb Rack Chops</h3>
-										<span class="tm-menu-dots"></span>
-										<span class="tm-menu-price">$19</span>
-										<span class="tm-menu-desc">w/Red Wine, Lemon, Dried Fruit &amp; Honey-Two Eggs any Style</span>
-									</div>
-									<div class="tm-menu-item tm-menu-compound">
-										<h3 class="tm-menu-name">Sautéed Veal Oscar Benedict</h3>
-
-										<span class="tm-menu-dots"></span>
-										<span class="tm-menu-price">$21</span>
-										<span class="tm-menu-desc"> w/Crab Meat, Asparagus, Canadian Bacon &amp; Truffled Béarnaise</span>
-									</div>
-									<div class="tm-menu-item tm-menu-compound">
-										<h3 class="tm-menu-name">Roasted Italian Sausage</h3>
-										<span class="tm-menu-dots"></span>
-										<span class="tm-menu-price">$15</span>
-										<span class="tm-menu-desc">w/Hot &amp; Sweet Peppers, Home Made Mozzarella, Pesto &amp; Two Eggs</span>
-									</div>
-									<div class="tm-menu-item tm-menu-compound">
-										<h3 class="tm-menu-name">Sautéed Veal Liver</h3>
-
-										<span class="tm-menu-dots"></span>
-										<span class="tm-menu-price">$13</span>
-										<span class="tm-menu-desc"> w/Bacon, Onion Sherry &amp; Cream-Two Eggs</span>
-									</div>
-									<div class="tm-menu-item tm-menu-compound">
-										<h3 class="tm-menu-name">Elsa’s Fantastic Waffles</h3>
-										<span class="tm-menu-dots"></span>
-										<span class="tm-menu-price">$13</span>
-										<span class="tm-menu-desc"> w/ Strawberries, Whipped Cream &amp; Pure Maple Syrup</span>
-									</div>
-									<div class="tm-menu-item tm-menu-compound">
-										<h3 class="tm-menu-name">Grilled N.Y. Sirloin Steak &amp; Eggs</h3>
-
-										<span class="tm-menu-dots"></span>
-										<span class="tm-menu-price">$19</span>
-										<span class="tm-menu-desc"> w/Caramelized Onions, Sweet &amp; Spicy Peppers-Two Eggs</span>
-									</div>
-									<div class="tm-menu-item tm-menu-compound">
-										<h3 class="tm-menu-name">Roasted Wild Alaskan King Salmon</h3>
-										<span class="tm-menu-dots"></span>
-										<span class="tm-menu-price">$22</span>
-										<span class="tm-menu-desc">With Pesto Crust w/ Cheron Sauce-Two Eggs Any Style</span>
-									</div>
-								</div>
-							</div>
-						</li>
 						<li>
 							<div class="uk-width-1-1">
 								<div class="uk-text-center">
@@ -913,6 +870,7 @@
 		</div>
 
 		<!-- header-b -->
+		<a name="lunch"></a>
 		<div id="tm-header-b" class="tm-block-top-b uk-block uk-block-default tm-block-fullwidth tm-grid-collapse">
 			<div class="uk-container uk-container-center">
 				<section class="tm-top-b uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin>
@@ -1352,6 +1310,7 @@
  -->
 
 		<!-- header-d -->
+		<a name="dessert"></a>
 		<div id="tm-header-d" class="tm-header-d uk-block uk-block-default tm-block-fullwidth tm-grid-collapse">
 			<div class="uk-container uk-container-center">
 				<section class="tm-header-d uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin>
